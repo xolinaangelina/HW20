@@ -1,2 +1,2 @@
-# HW20 внесення змін
+# HW20 внесення змін angelina.xolina.gitpractice
 
