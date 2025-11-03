@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея - Мурчик</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1>Фотогалерея Мурчика</h1>
-        <nav>
+    <header id="gallery-header">
+        <h1 class="page-title">Фотогалерея Мурчика</h1>
+        <nav class="main-navigation">
             <ul>
                 <li><a href="../index.html">Головна</a></li>
                 <li><a href="contact.html">Контакти</a></li>
@@ -17,32 +18,26 @@
         </nav>
         <hr>
     </header>
-
-    <main>
-        <section>
+    <main id="gallery-content">
+        <section class="gallery-section">
             <h2>Фотографії Мурчика</h2>
             <p>Найкращі моменти з життя найулюбленішого кота у світі!</p>
             
-            <figure>
-               <img src="../photos/myrchic.png" alt="Мурчик красавчик" width="500" height="350">
+            <figure class="gallery-item">
+                <img src="../photos/myrchic.png" alt="Мурчик красавчик" width="500" height="350">
                 <figcaption>Мурчик</figcaption>
             </figure>
-
-            <figure>
-               <img src="../photos/cat-play.png" alt="Мурчик грається" width="500" height="350">
+            <figure class="gallery-item">
+                <img src="../photos/cat-play.png" alt="Мурчик грається" width="500" height="350">
                 <figcaption>Активні ігри</figcaption>
             </figure>
-
-            <figure>
-               <img src="../photos/cat-food.png" alt="Мурчик чекає на їжу" width="500" height="350">
-
+            <figure class="gallery-item">
+                <img src="../photos/cat-food.png" alt="Мурчик чекає на їжу" width="500" height="350">
                 <figcaption>Час обіду - найсолодша мить дня для Мурчика</figcaption>
             </figure>
         </section>
-
-       
-
-    <footer>
+    </main>
+    <footer id="gallery-footer">
         <hr>
         <p><small>&copy; 2025 Мій веб-сайт про Мурчика. Всі права захищені.</small></p>
         <p><a href="../index.html">Повернутися на головну</a></p>

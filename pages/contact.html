@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакти - Мурчик</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
-        <h1>Контактна інформація</h1>
-        <nav>
+    <header id="contact-header">
+        <h1 class="page-title">Контактна інформація</h1>
+        <nav class="main-navigation">
             <ul>
                 <li><a href="../index.html">Головна</a></li>
                 <li><a href="contact.html">Контакти</a></li>
@@ -17,9 +18,181 @@
         </nav>
         <hr>
     </header>
+    <main id="contact-content">
+        <section class="contact-info-section">
+            <h2>Як зі мною зв'язатися</h2>
+            <p>Якщо ви хочете дізнатися більше про Мурчика або поділитися історіями про своїх котів!</p>
+            
+            <h3>Контактні дані</h3>
+            <address class="contact-address">
+                <p><strong>Email:</strong> <a href="mailto:murchyk@cats.com">murchyk@cats.com</a></p>
+                <p><strong>Телефон:</strong> <a href="tel:+380123456789">+380 12 345 67 89</a></p>
+                <p><strong>Місто:</strong> Дніпро, Україна</p>
+            </address>
+        </section>
 
+        <section class="form-section">
+            <h3>Форма зворотного зв'язку</h3>
+            <form action="#" method="post" class="contact-form">
+                <fieldset>
+                    <legend>Залишити повідомлення про котів</legend>
+                    
+                    <p>
+                        <label for="name">Ваше ім'я:</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    
+                    <p>
+                        <label for="catname">Ім'я вашого кота:</label><br>
+                        <input type="text" id="catname" name="catname">
+                    </p>
+                    
+                    <p>
+                        <label for="subject">Тема:</label><br>
+                        <select id="subject" name="subject">
+                            <option value="question">Питання про догляд</option>
+                            <option value="story">Історія про кота</option>
+                            <option value="advice">Порада</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="message">Повідомлення:</label><br>
+                        <textarea id="message" name="message" rows="6" cols="50"></textarea>
+                    </p>
+                    
+                    <p>
+                        <strong>У вас є кіт?</strong><br>
+                        <input type="radio" id="yes" name="hascat" value="yes">
+                        <label for="yes">Так</label><br>
+                        <input type="radio" id="no" name="hascat" value="no">
+                        <label for="no">Ні</label><br>
+                        <input type="radio" id="want" name="hascat" value="want">
+                        <label for="want">Хочу завести</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Підписатися на новини про Мурчика</label>
+                    </p>
+                    
+                    <p>
+                        <button type="submit">Надіслати</button>
+                        <button type="reset">Очистити</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="social-section">
+            <h3>Соціальні мережі Мурчика</h3>
+            <ul class="social-list">
+                <li><a href="#" target="_blank">Instagram Мурчика</a></li>
+                <li><a href="#" target="_blank">TikTok з відео котів</a></li>
+                <li><a href="#" target="_blank">YouTube канал</a></li>
+                <li><a href="#" target="_blank">Telegram канал про котів</a></li>
+            </ul>
+        </section>
+
+        <section class="weight-section">
+            <h3>Щоденник ваги Мурчика</h3>
+            <table class="weight-table">
+                <caption><strong>Моніторинг ваги за останні місяці</strong></caption>
+                <thead>
+                    <tr>
+                        <th>Місяць</th>
+                        <th>Вага (кг)</th>
+                        <th>Стан</th>
+                        <th>Примітки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Серпень</td>
+                        <td>4.8</td>
+                        <td>Відмінно</td>
+                        <td>Активний та здоровий</td>
+                    </tr>
+                    <tr>
+                        <td>Вересень</td>
+                        <td>4.9</td>
+                        <td>Відмінно</td>
+                        <td>Трохи набрав вагу</td>
+                    </tr>
+                    <tr>
+                        <td>Жовтень</td>
+                        <td>5.0</td>
+                        <td>Добре</td>
+                        <td>Стабільна вага</td>
+                    </tr>
+                    <tr>
+                        <td>Листопад</td>
+                        <td>5.0</td>
+                        <td>Відмінно</td>
+                        <td>Ідеальна вага</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="cat-facts-section">
+            <h3>Цікаві факти про котів</h3>
+            <blockquote>
+                <p>"Коти спроможні видавати понад 100 різних звуків, тоді як собаки лише близько 10"</p>
+            </blockquote>
+            
+            <p><strong>Загальні факти:</strong></p>
+            <ol class="facts-list">
+                <li>Коти сплять від 12 до 16 годин на день</li>
+                <li>У котів немає смакових рецепторів для солодкого</li>
+                <li>Коти можуть обертати вуха на 180 градусів</li>
+                <li>Муркотіння кота має частоту 25-150 Гц</li>
+                <li>Коти можуть бігти зі швидкістю до 48 км/год</li>
+                <li>У котів 32 м'язи в кожному вусі</li>
+            </ol>
+        </section>
+
+        <section class="activity-section">
+            <h3>Статистика активності</h3>
+            <p><em>Середня денна активність Мурчика</em></p>
+            <table class="activity-table">
+                <tr>
+                    <th>Активність</th>
+                    <th>Час (годин)</th>
+                    <th>Відсоток дня</th>
+                </tr>
+                <tr>
+                    <td>Сон</td>
+                    <td>14</td>
+                    <td>58%</td>
+                </tr>
+                <tr>
+                    <td>Ігри</td>
+                    <td>4</td>
+                    <td>17%</td>
+                </tr>
+                <tr>
+                    <td>Їжа та догляд</td>
+                    <td>2</td>
+                    <td>8%</td>
+                </tr>
+                <tr>
+                    <td>Спостереження та відпочинок</td>
+                    <td>4</td>
+                    <td>17%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="clinic-section">
             <h4>Ветеринарні клініки</h4>
-            <table border="1" cellpadding="10" cellspacing="0">
+            <table class="clinic-table">
                 <thead>
                     <tr>
                         <th>Назва</th>
@@ -49,8 +222,10 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+    </main>
 
-    <footer>
+    <footer id="contact-footer">
         <hr>
         <p><small>&copy; 2025 Мій веб-сайт про Мурчика. Всі права захищені.</small></p>
         <p><a href="../index.html">Повернутися на головну</a></p>

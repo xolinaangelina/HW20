@@ -3,203 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакти - Мурчик</title>
+    <title>Про мого улюбленого кота Мурчика</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Контактна інформація</h1>
-        <nav>
+    <header id="main-header">
+        <h1 class="page-title">Мій улюблений кіт - Мурчик</h1>
+        <nav class="main-navigation">
             <ul>
-                <li><a href="../index.html">Головна</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="pages/contact.html">Контакти</a></li>
+                <li><a href="pages/gallery.html">Галерея</a></li>
             </ul>
         </nav>
         <hr>
     </header>
- <figure>
-                <img src="photos/cat.png" alt="Привіт від Мурчика" width="500" height="350">
-                <figcaption>Активні ігри з улюбленою іграшкою</figcaption>
-            </figure>
 
-    <main>
-        <section>
-            <h2>Як зі мною зв'язатися</h2>
-            <p>Якщо ви хочете дізнатися більше про Мурчика або поділитися історіями про своїх котів!</p>
+    <main id="main-content">
+        <section class="about-section">
+            <h2>Про Мурчика</h2>
+            <img src="photos/cat.png" alt="Мій кіт Мурчик" width="400" height="300">
             
-            <h3>Контактні дані</h3>
-            <address>
-                <p><strong>Email:</strong> <a href="mailto:murchyk@cats.com">murchyk@cats.com</a></p>
-                <p><strong>Телефон:</strong> <a href="tel:+380123456789">+380 12 345 67 89</a></p>
-                <p><strong>Місто:</strong> Дніпро, Україна</p>
-            </address>
+            <h3>Основна інформація</h3>
+            <table class="info-table">
+                <tr>
+                    <th>Параметр</th>
+                    <th>Значення</th>
+                </tr>
+                <tr>
+                    <td><strong>Ім'я:</strong></td>
+                    <td>Мурчик</td>
+                </tr>
+                <tr>
+                    <td><strong>Вік:</strong></td>
+                    <td>3 роки</td>
+                </tr>
+                <tr>
+                    <td><strong>Порода:</strong></td>
+                    <td>Шотландська висловуха</td>
+                </tr>
+                <tr>
+                    <td><strong>Колір:</strong></td>
+                    <td>Сірий з білими лапками</td>
+                </tr>
+                <tr>
+                    <td><strong>Вага:</strong></td>
+                    <td>5 кг</td>
+                </tr>
+                <tr>
+                    <td><strong>Дата народження:</strong></td>
+                    <td>15 березня 2021</td>
+                </tr>
+            </table>
         </section>
 
-        <section>
-            <h3>Форма зворотного зв'язку</h3>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Залишити повідомлення про котів</legend>
-                    
-                    <p>
-                        <label for="name">Ваше ім'я:</label><br>
-                        <input type="text" id="name" name="name" required>
-                    </p>
-                    
-                    <p>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-                    
-                    <p>
-                        <label for="catname">Ім'я вашого кота:</label><br>
-                        <input type="text" id="catname" name="catname">
-                    </p>
-                    
-                    <p>
-                        <label for="subject">Тема:</label><br>
-                        <select id="subject" name="subject">
-                            <option value="question">Питання про догляд</option>
-                            <option value="story">Історія про кота</option>
-                            <option value="advice">Порада</option>
-                            <option value="other">Інше</option>
-                        </select>
-                    </p>
-                    
-                    <p>
-                        <label for="message">Повідомлення:</label><br>
-                        <textarea id="message" name="message" rows="6" cols="50"></textarea>
-                    </p>
-                    
-                    <p>
-                        <strong>У вас є кіт?</strong><br>
-                        <input type="radio" id="yes" name="hascat" value="yes">
-                        <label for="yes">Так</label><br>
-                        <input type="radio" id="no" name="hascat" value="no">
-                        <label for="no">Ні</label><br>
-                        <input type="radio" id="want" name="hascat" value="want">
-                        <label for="want">Хочу завести</label>
-                    </p>
-                    
-                    <p>
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        <label for="subscribe">Підписатися на новини про Мурчика</label>
-                    </p>
-                    
-                    <p>
-                        <button type="submit">Надіслати</button>
-                        <button type="reset">Очистити</button>
-                    </p>
-                </fieldset>
-            </form>
+        <section class="description-section">
+            <h3>Чому я люблю свого кота</h3>
+            <p>
+                Мурчик - це не просто домашня тварина, це повноцінний член нашої родини. 
+                Він має неймовірно м'який характер і завжди знає, коли мені потрібна підтримка. 
+                Його гучне муркотіння здатне заспокоїти після найважчого дня.
+            </p>
+            <p>
+                Найбільше мені подобається спостерігати, як він грається зі своїми іграшками. 
+                Мурчик особливо полюбляє гонятися за лазерною указкою та м'ячиком з дзвіночком. 
+                Він дуже розумний і вже навчився відкривати деякі двері в квартирі!
+            </p>
         </section>
 
-        <section>
-            <h3>Соціальні мережі Мурчика</h3>
-            <ul>
-                <li><a href="#" target="_blank">Instagram Мурчика</a></li>
-                <li><a href="#" target="_blank">TikTok з відео котів</a></li>
-                <li><a href="#" target="_blank">YouTube канал</a></li>
-                <li><a href="#" target="_blank">Telegram канал про котів</a></li>
+        <section class="activities-section">
+            <h3>Улюблені заняття Мурчика</h3>
+            <ul class="activities-list">
+                <li>Спати на підвіконні під теплим сонцем</li>
+                <li>Полювати на іграшкових мишок</li>
+                <li>Спостерігати за птахами через вікно</li>
+                <li>Муркотіти на колінах у господаря</li>
+                <li>Досліджувати картонні коробки</li>
+                <li>Гратися з клубочком ниток</li>
             </ul>
         </section>
 
-         </main>
- <section>
-            <h3>Щоденник ваги Мурчика</h3>
-            <table border="1" cellpadding="10" cellspacing="0">
-                <caption><strong>Моніторинг ваги за останні місяці</strong></caption>
-                <thead>
-                    <tr>
-                        <th>Місяць</th>
-                        <th>Вага (кг)</th>
-                        <th>Стан</th>
-                        <th>Примітки</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Серпень</td>
-                        <td>4.8</td>
-                        <td>Відмінно</td>
-                        <td>Активний та здоровий</td>
-                    </tr>
-                    <tr>
-                        <td>Вересень</td>
-                        <td>4.9</td>
-                        <td>Відмінно</td>
-                        <td>Трохи набрав вагу</td>
-                    </tr>
-                    <tr>
-                        <td>Жовтень</td>
-                        <td>5.0</td>
-                        <td>Добре</td>
-                        <td>Стабільна вага</td>
-                    </tr>
-                    <tr>
-                        <td>Листопад</td>
-                        <td>5.0</td>
-                        <td>Відмінно</td>
-                        <td>Ідеальна вага</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h3>Цікаві факти про котів</h3>
-            <blockquote>
-                <p>"Коти спроможні видавати понад 100 різних звуків, тоді як собаки лише близько 10"</p>
-            </blockquote>
-            
-            <p><strong>Загальні факти:</strong></p>
-            <ol>
-                <li>Коти сплять від 12 до 16 годин на день</li>
-                <li>У котів немає смакових рецепторів для солодкого</li>
-                <li>Коти можуть обертати вуха на 180 градусів</li>
-                <li>Муркотіння кота має частоту 25-150 Гц</li>
-                <li>Коти можуть бігти зі швидкістю до 48 км/год</li>
-                <li>У котів 32 м'язи в кожному вусі</li>
+        <section class="food-section">
+            <h3>Улюблена їжа</h3>
+            <ol class="food-list">
+                <li>Куряче філе</li>
+                <li>Корм преміум-класу з лососем</li>
+                <li>Вологий корм з індичкою</li>
+                <li>Котяча трава</li>
+                <li>Спеціальне котяче молоко</li>
             </ol>
         </section>
 
-        <section>
-            <h3>Статистика активності</h3>
-            <p><em>Середня денна активність Мурчика</em></p>
-            <table border="1" cellpadding="8" cellspacing="0">
+        <section class="facts-section">
+            <h3>Цікаві факти про Мурчика</h3>
+            <blockquote>
+                <p>"Кішки обирають нас, ми їх не обираємо" - народна мудрість</p>
+            </blockquote>
+            <p><strong>Особливості характеру:</strong></p>
+            <ul>
+                <li>Дуже товариський - зустрічає всіх гостей біля дверей</li>
+                <li>Любить спати на клавіатурі комп'ютера під час роботи</li>
+                <li>Має особливий ритуал - кожного ранку будить мене о 7:00</li>
+                <li>Боїться пилососа, але цікавиться ним з безпечної відстані</li>
+                <li>Вміє відкривати дверцята шафи, де зберігається його корм</li>
+            </ul>
+        </section>
+
+        <section class="schedule-section">
+            <h3>Розклад дня</h3>
+            <table class="schedule-table">
                 <tr>
+                    <th>Час</th>
                     <th>Активність</th>
-                    <th>Час (годин)</th>
-                    <th>Відсоток дня</th>
                 </tr>
                 <tr>
-                    <td>Сон</td>
-                    <td>14</td>
-                    <td>58%</td>
+                    <td>7:00</td>
+                    <td>Підйом і сніданок</td>
                 </tr>
                 <tr>
-                    <td>Ігри</td>
-                    <td>4</td>
-                    <td>17%</td>
+                    <td>8:00 - 12:00</td>
+                    <td>Ранковий сон</td>
                 </tr>
                 <tr>
-                    <td>Їжа та догляд</td>
-                    <td>2</td>
-                    <td>8%</td>
+                    <td>12:00 - 14:00</td>
+                    <td>Ігри та дослідження квартири</td>
                 </tr>
                 <tr>
-                    <td>Спостереження та відпочинок</td>
-                    <td>4</td>
-                    <td>17%</td>
+                    <td>14:00 - 18:00</td>
+                    <td>Післяобідній сон на підвіконні</td>
+                </tr>
+                <tr>
+                    <td>18:00 - 19:00</td>
+                    <td>Вечеря</td>
+                </tr>
+                <tr>
+                    <td>19:00 - 22:00</td>
+                    <td>Активні ігри та спілкування</td>
+                </tr>
+                <tr>
+                    <td>22:00 - 7:00</td>
+                    <td>Нічний сон</td>
                 </tr>
             </table>
         </section>
+
+        <section class="achievements-section">
+            <h3>Досягнення</h3>
+            <p><em>Мурчик - не просто кіт, він справжній чемпіон!</em></p>
+            <ul>
+                <li>Переможець домашнього конкурсу "Найміліший кіт" - 2022 рік</li>
+                <li>Майстер маскування в картонних коробках</li>
+                <li>Рекордсмен по тривалості муркотіння - 2 години підряд</li>
+                <li>Найшвидший ловець мух у квартирі</li>
+            </ul>
+        </section>
     </main>
 
-    <footer>
+    <footer id="main-footer">
         <hr>
         <p><small>&copy; 2025 Мій веб-сайт про Мурчика. Всі права захищені.</small></p>
-        <p><a href="../index.html">Повернутися на головну</a></p>
+        <p><em>Створено з любов'ю до найкращого кота у світі!</em></p>
     </footer>
 </body>
 </html>
